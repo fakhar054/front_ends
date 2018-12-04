@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Front Ends</string>
+
+    <string-array name="countries_array">
+        <item>Select Country</item>
+        <item>Pakistan</item>
+        <item>India</item>
+        <item>Bangladesh</item>
+        <item>Turkey</item>
+    </string-array>
+</resources>

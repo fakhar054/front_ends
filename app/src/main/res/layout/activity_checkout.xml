@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.thinkgeniux.front_ends.checkout"
+    android:orientation="vertical">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="05dp"
+            android:src="@drawable/left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginLeft="30dp"
+            android:layout_gravity="center"
+            android:textSize="18dp"
+            android:textColor="#000"
+            android:layout_marginTop="10dp"
+            android:text="Back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView" />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="150dp"
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="CheckOut"
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_below="@id/tv"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:background="#d9d7d7"/>
+        <CheckBox
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/view"
+            android:id="@+id/checkb"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+        android:layout_marginLeft="50dp"
+        android:textSize="15dp"
+        android:textColor="#000"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/view"
+    android:text="Returning customer?Login here"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:hint="User Name"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/edit_text"
+        android:paddingLeft="30dp"/>
+    <EditText
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:hint="Password"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/edit_text"
+        android:paddingLeft="30dp" />
+
+    <Button
+        android:textColor="#f7f5f5"
+        android:layout_marginLeft="20dp"
+        android:background="#f15463"
+        android:layout_marginTop="10dp"
+        android:text="Login"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textSize="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="#f15463"
+        android:text="Billing Address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:paddingLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:hint="First Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:paddingLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:hint="Last Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:paddingLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:hint="Phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:paddingLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:hint="Street Address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:paddingLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:hint="Apartment,Suite,unit etc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/logo"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp"
+            android:textColor="#000"
+            android:text="Beanie with Logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+         <TextView
+             android:layout_marginLeft="290dp"
+            android:textSize="20dp"
+            android:textColor="#000"
+            android:text="$10.00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/red"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/logo"
+            android:textSize="20dp"
+            android:textColor="#000"
+            android:text="Logo Collections-Red,\nMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/logo"
+                android:layout_marginLeft="290dp"
+                android:textSize="20dp"
+                android:textColor="#000"
+                android:text="$20.00"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/beani"
+                android:layout_below="@+id/red"
+                android:layout_marginLeft="20dp"
+                android:textSize="20dp"
+                android:textColor="#000"
+                android:text="Beanie with Logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/ten"
+                android:layout_below="@+id/red"
+                android:layout_marginLeft="290dp"
+                android:textSize="20dp"
+                android:textColor="#000"
+                android:text="$10.00"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/subtotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/beani"
+                android:layout_alignStart="@+id/beani"
+                android:layout_below="@+id/beani"
+                android:text="SubTotal"
+                android:textColor="#000"
+                android:textSize="20dp" />
+            <TextView
+                android:layout_below="@+id/beani"
+                android:layout_marginLeft="290dp"
+                android:textSize="20dp"
+                android:textColor="#000"
+                android:text="$40.00"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tax"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@+id/subtotal"
+                android:textSize="20dp"
+                android:textColor="#000"
+                android:text="Subtotal ex.tax"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_below="@+id/subtotal"
+                android:layout_marginLeft="290dp"
+                android:textSize="20dp"
+                android:textColor="#000"
+                android:text="$40.00"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/total"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@+id/tax"
+                android:textSize="20dp"
+                android:textColor="#000"
+                android:text="Total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textStyle="bold"
+                android:layout_below="@+id/tax"
+                android:layout_marginLeft="290dp"
+                android:textSize="20dp"
+                android:textColor="#000"
+                android:text="$40.00"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:id="@+id/payment"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="#f15463"
+                android:layout_below="@+id/total"
+                android:text="Select Payment Method"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_below="@id/payment"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:background="#d9d7d7"/>
+
+            <TextView
+
+                android:textSize="20dp"
+                android:id="@+id/bank"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="#000"
+                android:layout_below="@+id/payment"
+                android:text="Direct Bank transfer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_below="@id/bank"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:background="#d9d7d7"/>
+            <TextView
+                android:id="@+id/cp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="#f15463"
+                android:layout_below="@+id/bank"
+                android:text="Check Payments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <CheckBox
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="300dp"
+                android:layout_below="@+id/bank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_below="@id/cp"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:background="#d9d7d7"/>
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#000"
+                android:layout_below="@+id/cp"
+                android:textSize="20dp"
+                android:text="PayPal"
+                android:id="@+id/pal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_below="@id/pal"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:background="#d9d7d7"/>
+            <TextView
+                android:id="@+id/paragraph"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#000"
+                android:layout_below="@+id/pal"
+                android:textSize="20dp"
+                android:text="Please send a check to Store Name, Store
+\nStreet, Store Town, Store State/Country, Store\nPostCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <CheckBox
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@+id/paragraph"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox" />
+            <TextView
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="60dp"
+                android:textColor="#000"
+                android:layout_below="@+id/paragraph"
+                android:text="I Agree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/paragraph"
+                android:text=" Terms&amp; Conditions "
+                android:textColor="#0fa3de"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+        <Button
+            android:layout_marginTop="10dp"
+            android:textColor="#f7f5f5"
+            android:background="#f15463"
+            android:text="Place Order"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</ScrollView>
