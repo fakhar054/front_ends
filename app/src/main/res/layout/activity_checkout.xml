@@ -12,10 +12,7 @@
         android:layout_height="wrap_content">
 
 
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+
         <!-- This is a comment.
         <ImageView
             android:layout_marginTop="10dp"
@@ -72,7 +69,7 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content" /> -->
 
-    </RelativeLayout>
+
 
     <EditText
         android:drawableLeft="@drawable/manuser"
@@ -101,7 +98,7 @@
         android:layout_marginRight="20dp"
         android:textColor="#f7f5f5"
         android:layout_marginLeft="20dp"
-        android:background="#f15463"
+        android:background="@color/colorAccent"
         android:layout_marginTop="10dp"
         android:text="Login"
         android:layout_width="match_parent"
@@ -110,7 +107,7 @@
         android:textSize="15dp"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="20dp"
-        android:textColor="#f15463"
+        android:textColor="@color/colorAccent"
         android:text="Billing Address"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
@@ -144,11 +141,132 @@
         android:hint="Apartment,Suite,unit etc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+        <EditText
+            android:layout_marginTop="10dp"
+            android:hint="Postcode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Spinner
+
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/countries_array">
+        </Spinner>
+
+        <Spinner
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/state_array">
+        </Spinner>
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/acount"
+                android:textSize="20dp"
+                android:textColor="#000"
+                android:layout_marginTop="25dp"
+                android:text="Create Account?"
+                android:layout_marginLeft="55dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:layout_below="@+id/acount"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/ship"
+                android:layout_below="@+id/acount"
+                android:textSize="20dp"
+                android:textColor="#000"
+                android:layout_marginTop="25dp"
+                android:text="Ship to different address?"
+                android:layout_marginLeft="55dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/order"
+                android:layout_below="@+id/ship"
+                android:textSize="20dp"
+                android:textColor="#000"
+                android:layout_marginTop="25dp"
+                android:text="Order notes"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:id="@+id/line"
+                android:layout_below="@+id/order"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="3dp"
+            android:background="#d9d7d7"/>
+            <EditText
+                android:layout_marginTop="10dp"
+                android:id="@+id/et"
+                android:hint="Notes about your order e.g special notes for delivery"
+                android:layout_below="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/method"
+                android:layout_below="@+id/et"
+                android:textSize="20dp"
+                android:textColor="@color/colorAccent"
+                android:layout_marginTop="50dp"
+                android:text="Select a Shiping mehtod"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_below="@+id/method"
+                android:textSize="20dp"
+                android:textColor="@color/colorAccent"
+                android:layout_marginTop="20dp"
+                android:text="Free Shiping - $0.00"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <CheckBox
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="320dp"
+                android:layout_below="@+id/method"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="20dp"
+                android:textColor="#000"
+                android:layout_marginTop="25dp"
+                android:text="Create Account?"
+                android:layout_marginLeft="55dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+
+        </RelativeLayout>
+
+
+
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
         <TextView
+            android:layout_marginTop="10dp"
             android:id="@+id/logo"
             android:layout_marginLeft="15dp"
             android:textSize="20dp"
@@ -272,7 +390,7 @@
                 android:id="@+id/payment"
                 android:layout_marginTop="30dp"
                 android:layout_marginLeft="20dp"
-                android:textColor="#f15463"
+                android:textColor="@color/colorAccent"
                 android:layout_below="@+id/total"
                 android:text="Select Payment Method"
                 android:layout_width="wrap_content"
@@ -307,7 +425,7 @@
                 android:textStyle="bold"
                 android:layout_marginTop="20dp"
                 android:layout_marginLeft="20dp"
-                android:textColor="#f15463"
+                android:textColor="@color/colorAccent"
                 android:layout_below="@+id/bank"
                 android:text="Check Payments"
                 android:layout_width="wrap_content"
@@ -378,6 +496,7 @@
                 android:text=" Terms&amp; Conditions "
                 android:textColor="#0fa3de"
                 android:textSize="20dp" />
+
 
         </RelativeLayout>
         <Button
