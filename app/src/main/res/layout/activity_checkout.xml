@@ -16,6 +16,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+        <!-- This is a comment.
         <ImageView
             android:layout_marginTop="10dp"
             android:layout_marginLeft="05dp"
@@ -69,36 +70,41 @@
         android:layout_below="@+id/view"
     android:text="Returning customer?Login here"
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content" />
+    android:layout_height="wrap_content" /> -->
 
     </RelativeLayout>
 
     <EditText
+        android:drawableLeft="@drawable/manuser"
         android:layout_marginTop="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginLeft="10dp"
-        android:hint="User Name"
+        android:hint="   User Name"
         android:layout_width="match_parent"
         android:layout_height="35dp"
         android:background="@drawable/edit_text"
-        android:paddingLeft="30dp"/>
-    <EditText
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginLeft="10dp"
-        android:hint="Password"
-        android:layout_width="match_parent"
-        android:layout_height="35dp"
-        android:background="@drawable/edit_text"
-        android:paddingLeft="30dp" />
+        android:paddingLeft="10dp"/>
 
-    <Button
+        <EditText
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@drawable/edit_text"
+            android:drawableLeft="@drawable/lock"
+            android:hint="   Password"
+            android:inputType="textWebPassword"
+            android:paddingLeft="10dp" />
+
+
+        <Button
+        android:layout_marginRight="20dp"
         android:textColor="#f7f5f5"
         android:layout_marginLeft="20dp"
         android:background="#f15463"
         android:layout_marginTop="10dp"
         android:text="Login"
-        android:layout_width="330dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <TextView
         android:textSize="15dp"
@@ -144,7 +150,7 @@
 
         <TextView
             android:id="@+id/logo"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="15dp"
             android:textSize="20dp"
             android:textColor="#000"
             android:text="Beanie with Logo"
@@ -164,7 +170,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginLeft="20dp"
             android:layout_below="@+id/logo"
-            android:textSize="20dp"
+            android:textSize="15dp"
             android:textColor="#000"
             android:text="Logo Collections-Red,\nMedium"
             android:layout_width="wrap_content"
@@ -173,31 +179,34 @@
                 android:layout_marginTop="10dp"
                 android:layout_below="@+id/logo"
                 android:layout_marginLeft="290dp"
-                android:textSize="20dp"
+                android:textSize="15dp"
                 android:textColor="#000"
                 android:text="$20.00"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
             <TextView
+                android:layout_marginTop="10dp"
                 android:id="@+id/beani"
                 android:layout_below="@+id/red"
                 android:layout_marginLeft="20dp"
-                android:textSize="20dp"
+                android:textSize="15dp"
                 android:textColor="#000"
                 android:text="Beanie with Logo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
             <TextView
+                android:layout_marginTop="10dp"
                 android:id="@+id/ten"
                 android:layout_below="@+id/red"
                 android:layout_marginLeft="290dp"
-                android:textSize="20dp"
+                android:textSize="15dp"
                 android:textColor="#000"
                 android:text="$10.00"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
             <TextView
+                android:layout_marginTop="10dp"
                 android:id="@+id/subtotal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -206,16 +215,18 @@
                 android:layout_below="@+id/beani"
                 android:text="SubTotal"
                 android:textColor="#000"
-                android:textSize="20dp" />
+                android:textSize="15dp" />
             <TextView
+                android:layout_marginTop="10dp"
                 android:layout_below="@+id/beani"
                 android:layout_marginLeft="290dp"
-                android:textSize="20dp"
+                android:textSize="15dp"
                 android:textColor="#000"
                 android:text="$40.00"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
             <TextView
+                android:layout_marginTop="10dp"
                 android:id="@+id/tax"
                 android:layout_marginLeft="20dp"
                 android:layout_below="@+id/subtotal"
@@ -225,6 +236,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
             <TextView
+                android:layout_marginTop="10dp"
                 android:layout_below="@+id/subtotal"
                 android:layout_marginLeft="290dp"
                 android:textSize="20dp"
@@ -233,6 +245,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
             <TextView
+                android:layout_marginTop="10dp"
                 android:textStyle="bold"
                 android:id="@+id/total"
                 android:layout_marginLeft="20dp"
@@ -243,6 +256,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
             <TextView
+                android:layout_marginTop="10dp"
                 android:textStyle="bold"
                 android:layout_below="@+id/tax"
                 android:layout_marginLeft="290dp"
@@ -252,10 +266,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
             <TextView
+
                 android:textSize="20dp"
                 android:textStyle="bold"
                 android:id="@+id/payment"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="30dp"
                 android:layout_marginLeft="20dp"
                 android:textColor="#f15463"
                 android:layout_below="@+id/total"
@@ -273,7 +288,7 @@
 
                 android:textSize="20dp"
                 android:id="@+id/bank"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginLeft="20dp"
                 android:textColor="#000"
                 android:layout_below="@+id/payment"
@@ -290,7 +305,7 @@
                 android:id="@+id/cp"
                 android:textSize="20dp"
                 android:textStyle="bold"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginLeft="20dp"
                 android:textColor="#f15463"
                 android:layout_below="@+id/bank"
@@ -298,7 +313,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
             <CheckBox
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginLeft="300dp"
                 android:layout_below="@+id/bank"
                 android:layout_width="wrap_content"
@@ -312,7 +327,7 @@
                 android:background="#d9d7d7"/>
             <TextView
                 android:layout_marginLeft="20dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="20dp"
                 android:textColor="#000"
                 android:layout_below="@+id/cp"
                 android:textSize="20dp"
@@ -328,17 +343,17 @@
                 android:background="#d9d7d7"/>
             <TextView
                 android:id="@+id/paragraph"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
                 android:textColor="#000"
                 android:layout_below="@+id/pal"
-                android:textSize="20dp"
+                android:textSize="17dp"
                 android:text="Please send a check to Store Name, Store
 \nStreet, Store Town, Store State/Country, Store\nPostCode"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
             <CheckBox
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="08dp"
                 android:layout_marginLeft="20dp"
                 android:layout_below="@+id/paragraph"
                 android:layout_width="wrap_content"
@@ -356,7 +371,7 @@
 
             <TextView
                 android:layout_marginLeft="120dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="12dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/paragraph"
@@ -369,7 +384,7 @@
             android:layout_marginTop="10dp"
             android:textColor="#f7f5f5"
             android:background="#f15463"
-            android:text="Place Order"
+            android:text="PLACE ORDER"
             android:layout_marginRight="10dp"
             android:layout_marginLeft="10dp"
             android:layout_width="match_parent"

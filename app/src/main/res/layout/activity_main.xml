@@ -7,37 +7,49 @@
     tools:context="com.example.thinkgeniux.front_ends.MainActivity"
     android:orientation="vertical">
 
+<ImageView
+    android:id="@+id/imageView"
+    android:layout_marginTop="50dp"
+    android:layout_gravity="center"
+    android:src="@drawable/hair"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+
+<TextView
+    android:textStyle="bold"
+    android:layout_gravity="center"
+android:textSize="30dp"
+android:textColor="#000"
+android:layout_marginTop="10dp"
+android:text="YOUR SHOP"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content" />
 
   <TextView
+      android:textSize="13dp"
+      android:fontFamily="casual"
       android:layout_gravity="center"
-      android:textSize="18dp"
-      android:textColor="#000"
-     android:layout_marginTop="10dp"
-      android:text="Login"
+      android:textColor="#f15463"
+      android:text="SLOGAN GOES HERE"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content" />
-  <View
-      android:layout_marginTop="5dp"
-      android:layout_width="wrap_content"
-      android:layout_height="2dp"
-      android:background="#d9d7d7"/>
-
-
 
   <EditText
+      android:drawableLeft="@drawable/maill"
       android:inputType="text"
-      android:paddingLeft="40dp"
+      android:paddingLeft="10dp"
       android:layout_marginRight="10dp"
       android:layout_marginLeft="10dp"
-      android:hint="Username"
+      android:hint="   Username"
       android:layout_width="match_parent"
       android:layout_height="wrap_content" />
     <EditText
+        android:drawableLeft="@drawable/key"
         android:inputType="textWebPassword"
-        android:paddingLeft="40dp"
+        android:paddingLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginLeft="10dp"
-        android:hint="Password"
+        android:hint="   Password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <TextView
@@ -66,7 +78,7 @@
 
   <View
       android:layout_marginTop="15dp"
-      android:layout_width="140dp"
+      android:layout_width="150dp"
       android:layout_height="2dp"
       android:background="#d9d7d7"/>
     <TextView
@@ -118,9 +130,6 @@
         android:text="Here"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
-
-
   </LinearLayout>
-
 
 </LinearLayout>
